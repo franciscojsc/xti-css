@@ -1,53 +1,46 @@
-/*Pseudo Seletores*/
-
-/*Aplicar a cor azul se o primeiro elemento filho for h1*/
-div h1:first-child {
-    color:blue;
-}
+/*Efeito Cascata e Herança*/
 
 
-a:link {
+div > p {
     color:red;
 }
-a:visited {
-    color:green;
-}
-a:hover {
-    color:rgb(110, 143, 21);
-}
-a:active{
-    color: gray;
-}
-a:lang(en){
-    color:greenyellow;
+
+p{
+    color:blue !important;
 }
 
 
-label:hover{
-    background-color:#73be98;
-}
-input[type="text"]:focus{
-    background-color:yellow;
-}
+/*
+    3 fontes distintas de folhas de estilo
 
-/*Aplicar o css a primeira linha de um elemento em bloco, pode ser utilizado em tabela, paragrafos e etc... */
-p:first-line {
-    color: blueviolet;
-}
+    1- autor
+    2- usuário
+    3- browser
+--------------------------------------------
+                                    Menos impotante
+1. Folha do Navegador                       |
+2. Folha do Usuário                         | 
+3. Folha do Autor                           |
+    a) Estilo Extreno (importado)           |
+    b) Estilo Incorporado (head)            |
+    c) Estilo Inline                        |
+4. !important do Autor                      |
+5. !important do Usuário                    |
+                                            V
+                                    Mais importante
 
-/*Inicio do conteúdo*/
-p:before{
-    content: "Ínicio ";
-}
 
-/*Fim do conteúdo*/
-p:after{
-    content: " Fim";
-}
+                Calculo de especificidade
+a. Inline                               1
+b. IDs                                  2
+c. Classes, pseudoclasses, atributos    3
+d. Elementos e pseudoelementos          4
 
-/*Aplicar o css a primeira letra */
-p:first-letter {
-    font-size: 40px;
-    color: rgb(12, 167, 167);
-}
-
+ex:
+                               Grau
+    p{}         0, 0, 0, 1      1
+    div p{}     0, 0, 0, 2      2
+    p.intro{}   0, 0, 1, 1      11
+    #menu{}     0, 1, 0, 0      100
+    style=""    1, 0, 0, 0      1000
+*/
