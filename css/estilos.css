@@ -1,4 +1,35 @@
-p {
-    color:#991f00;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+/*Seletor universal*/
+*{
+    color:#006699;
+    margin:0;
 }
+
+/*Seletor elemento*/
+p{
+    color:#0000cc;
+}
+
+/*Seletor classe*/
+.destaque{
+    color:#cc0000;
+}
+.detalhe{
+    text-decoration: underline;
+}
+
+/*Seletor id*/
+#introducao{
+    background-color:#FFCC33;
+}
+
+/*Seletor tipo atributo*/
+em[title=Empresa]{
+    color:#309900;
+    font-size: 20px;
+}
+/*se o artibuto possuir a palavra em algum parte*/
+em[title~=XTI]{
+    color:#771d43;
+    font-size: 39px;
+}
+
