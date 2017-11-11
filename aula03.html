@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Css Aula03</title>
+
+    <!--Folha de estilo linkada -->
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css" media="all"/>
+
+    <!--Folha de estilo importada -->
+    <style type="text/css">
+        @import url("estilos.css");
+    </style>
+
+    <!--Folha de estilo incorporada -->
+    <style type="text/css" media="screen">
+        /* media para computadores*/
+        h1{
+            color:#006699
+        }
+        h1{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+
+     <style type="text/css" media="handheld">
+        /* media para celulares*/
+        h1, p {
+            color:#90ece0
+        }
+        h1{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 id="novo"> Paragrafo com indeficador</h1>
+    <h2>Aula de CSS</h2>
+    <p class="destaque">CSS 2</p>
+    <h3 class="diferente destaque">Outro texto</h3>
+</body>
+</html>
