@@ -1,21 +1,53 @@
-/*Seletores compostos*/
+/*Pseudo Seletores*/
 
-
-/*Seletor decendente */
-div em {
-    color:red;
-}
-
-/*Seletor filhos*/
-div > em {
-    text-decoration: underline;
-}
-
-/*Seletor Irmão adjacente*/
-p + p {
+/*Aplicar a cor azul se o primeiro elemento filho for h1*/
+div h1:first-child {
     color:blue;
 }
 
-p + h2 {
-    text-decoration: underline;
+
+a:link {
+    color:red;
 }
+a:visited {
+    color:green;
+}
+a:hover {
+    color:rgb(110, 143, 21);
+}
+a:active{
+    color: gray;
+}
+a:lang(en){
+    color:greenyellow;
+}
+
+
+label:hover{
+    background-color:#73be98;
+}
+input[type="text"]:focus{
+    background-color:yellow;
+}
+
+/*Aplicar o css a primeira linha de um elemento em bloco, pode ser utilizado em tabela, paragrafos e etc... */
+p:first-line {
+    color: blueviolet;
+}
+
+/*Inicio do conteúdo*/
+p:before{
+    content: "Ínicio ";
+}
+
+/*Fim do conteúdo*/
+p:after{
+    content: " Fim";
+}
+
+/*Aplicar o css a primeira letra */
+p:first-letter {
+    font-size: 40px;
+    color: rgb(12, 167, 167);
+}
+
