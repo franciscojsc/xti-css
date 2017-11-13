@@ -1,46 +1,23 @@
-/*Efeito Cascata e Herança*/
+p {
+    margin: 1px 50px 50px 20px;
+    padding: 50px 20px 10px 15px;
+    border: 5px ridge blueviolet;
 
+    /*
+    margin-top: 1px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+   
 
-div > p {
-    color:red;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 15;
+
+    border-width: 2px 3px 4px 5px;
+    border-color: red yellow cyan blue;
+    border-style: dashed dotted double ridge;
+
+    */    
 }
-
-p{
-    color:blue !important;
-}
-
-
-/*
-    3 fontes distintas de folhas de estilo
-
-    1- autor
-    2- usuário
-    3- browser
---------------------------------------------
-                                    Menos impotante
-1. Folha do Navegador                       |
-2. Folha do Usuário                         | 
-3. Folha do Autor                           |
-    a) Estilo Extreno (importado)           |
-    b) Estilo Incorporado (head)            |
-    c) Estilo Inline                        |
-4. !important do Autor                      |
-5. !important do Usuário                    |
-                                            V
-                                    Mais importante
-
-
-                Calculo de especificidade
-a. Inline                               1
-b. IDs                                  2
-c. Classes, pseudoclasses, atributos    3
-d. Elementos e pseudoelementos          4
-
-ex:
-                               Grau
-    p{}         0, 0, 0, 1      1
-    div p{}     0, 0, 0, 2      2
-    p.intro{}   0, 0, 1, 1      11
-    #menu{}     0, 1, 0, 0      100
-    style=""    1, 0, 0, 0      1000
-*/
