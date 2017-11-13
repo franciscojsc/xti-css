@@ -1,34 +1,30 @@
 /*
-        MEDIDAS ABSOLUTAS
+             ESTILIZAÇÃO DAS FONTES DOS TEXTOS
 
-    5in
-    5cm
-    5mm
-    5pt
-    5pc
+        9 Fontes Seguras
+        -Arial
+        -Arial Black
+        -Comic Sans MS
+        -Courier New
+        -Impact
+        -Times New Roman
+        -Trebuchet MS
+        -Verdana
 
-        MEDIDAS RELATIVAS
-
-    5em
-    5ex
-    5px
+            (Grupo) Fontes Genéricas
+        -Serif
+        -Sans-Serif
+        -Cursive
+        -Fantasy
+        -Monospace
 
 */
-*{
-    font-size: 10px;
-}
 
-h1{
-    font-size: 3em;
-    /*3 x 10*/
-}
+P{
+    font-family: "lucida grande", "lucida sans", verdana, sans-serif;
+    font-style: italic;
+    font-weight: initial;
+    font-variant: small-caps;
+    font-size: 15px;
 
-h2{
-    font-size: 2em;
-     /*2 x 10*/
-}
-
-h3{
-    font-size: 200%;
-    /*O valor do h3 é 200% do valor original, se a font-size: 10px ficará 20px*/
 }
