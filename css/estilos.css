@@ -1,23 +1,34 @@
-p {
-    margin: 1px 50px 50px 20px;
-    padding: 50px 20px 10px 15px;
-    border: 5px ridge blueviolet;
+/*
+        MEDIDAS ABSOLUTAS
 
-    /*
-    margin-top: 1px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    margin-left: 20px;
-   
+    5in
+    5cm
+    5mm
+    5pt
+    5pc
 
-    padding-top: 50px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 15;
+        MEDIDAS RELATIVAS
 
-    border-width: 2px 3px 4px 5px;
-    border-color: red yellow cyan blue;
-    border-style: dashed dotted double ridge;
+    5em
+    5ex
+    5px
 
-    */    
+*/
+*{
+    font-size: 10px;
+}
+
+h1{
+    font-size: 3em;
+    /*3 x 10*/
+}
+
+h2{
+    font-size: 2em;
+     /*2 x 10*/
+}
+
+h3{
+    font-size: 200%;
+    /*O valor do h3 é 200% do valor original, se a font-size: 10px ficará 20px*/
 }
