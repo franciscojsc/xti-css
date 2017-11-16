@@ -1,5 +1,27 @@
+/*
+    BACKGROUND
+        -COLOR
+        -IMAGE
+        -REPEAT
+        -ATTACHMENT
+        -POSITION
+*/
 
-p{
-    text-decoration: underline line-through;
-    text-transform: capitalize;     
+body{
+    background-image: url("../img/code_application_3283.png");
+    background-repeat: repeat;
+}
+
+div{
+    width:500px;
+    height: 500px;
+    border: 2px solid black;
+    /*
+    background-color: rgba(43,55,253,0.2);
+    background-image: url("../img/code_application_3283.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -70px -70px;
+    */
+    background: rgba(43,55,253,0.2) url("../img/code_application_3283.png") no-repeat fixed -70px -70px;
 }
