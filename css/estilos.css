@@ -1,12 +1,5 @@
 
-P{
-    letter-spacing: 2px;/*Espacamento entre as letras*/
-    word-spacing: 10px;/*Espacamento entre as palavras*/
-    line-height: 30px;/*Espacamento entre as linhas*/
-    text-align: justify;
-    text-indent: 50px;
-}
-
-span{
-    vertical-align: sub;
+p{
+    text-decoration: underline line-through;
+    text-transform: capitalize;     
 }
