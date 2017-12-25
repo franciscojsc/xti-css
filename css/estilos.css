@@ -1,8 +1,9 @@
-#container{
-    border: 2px solid;
-    width: 200px;
-    padding: 10px;
+/*
+    CSS Sprite
+*/
 
-    border-radius: 10px;
-    box-shadow: 10px 10px 5px cadetblue;
+.email{
+    background: url("./../img/sprite.png") -193px -0px;
+    height: 29px;
+    width: 29px;
 }
